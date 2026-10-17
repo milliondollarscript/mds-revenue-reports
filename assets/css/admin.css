@@ -1,0 +1,415 @@
+.mds-revenue-reports-admin {
+    --mds-revenue-reports-accent: var(--mds3-admin-accent, #2563eb);
+    --mds-revenue-reports-accent-dark: var(--mds3-admin-accent-strong, #1d4ed8);
+    --mds-revenue-reports-ink: var(--mds3-admin-text, #111827);
+    --mds-revenue-reports-muted: var(--mds3-admin-muted, #64748b);
+    --mds-revenue-reports-line: var(--mds3-admin-border, #dbe3ef);
+    --mds-revenue-reports-soft: var(--mds3-admin-surface-subtle, #f8fafc);
+    --mds-revenue-reports-surface: var(--mds3-admin-surface, #fff);
+    --mds-revenue-reports-accent-soft: var(--mds3-admin-accent-soft, #eff6ff);
+    --mds-revenue-reports-accent-line: var(--mds3-admin-accent-border, #93c5fd);
+}
+
+.mds-revenue-reports-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 18px 0 24px;
+}
+
+.mds-revenue-reports-hero h1,
+.mds-revenue-reports-panel h2,
+.mds-revenue-reports-empty h2,
+.mds-revenue-reports-currency-note h2 {
+    margin-top: 0;
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-hero h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.mds-revenue-reports-hero p,
+.mds-revenue-reports-panel p,
+.mds-revenue-reports-currency-note p {
+    max-width: 760px;
+    color: var(--mds-revenue-reports-muted);
+}
+
+.mds-revenue-reports-eyebrow {
+    margin: 0 0 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: var(--mds-revenue-reports-accent-dark);
+}
+
+.mds-revenue-reports-filters form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    align-items: end;
+}
+
+.mds-revenue-reports-filters label {
+    display: grid;
+    gap: 6px;
+    min-width: 0;
+}
+
+.mds-revenue-reports-filters label span {
+    font-weight: 700;
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-filters select,
+.mds-revenue-reports-filters input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.mds-revenue-reports-filter-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.mds-revenue-reports-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    margin: 16px 0;
+}
+
+.mds-revenue-reports-metric {
+    display: grid;
+    gap: 8px;
+}
+
+.mds-revenue-reports-metric span {
+    color: var(--mds-revenue-reports-muted);
+    font-weight: 700;
+}
+
+.mds-revenue-reports-metric strong {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-metric small,
+.mds-revenue-reports-bars small {
+    color: var(--mds-revenue-reports-muted);
+}
+
+.mds-revenue-reports-guidance {
+    display: grid;
+    grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr);
+    gap: 16px;
+    align-items: start;
+    margin: 16px 0;
+}
+
+.mds-revenue-reports-guidance h2 {
+    margin: 0 0 6px;
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-guidance p {
+    margin: 0;
+    color: var(--mds-revenue-reports-muted);
+}
+
+.mds-revenue-reports-guidance ul {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mds-revenue-reports-guidance li {
+    position: relative;
+    padding: 9px 0 9px 24px;
+    border-top: 1px solid var(--mds-revenue-reports-line);
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-guidance li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--mds-revenue-reports-accent);
+}
+
+.mds-revenue-reports-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.mds-revenue-reports-panel-wide {
+    grid-row: span 2;
+}
+
+.mds-revenue-reports-panel-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.mds-revenue-reports-panel-heading .button {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.mds-revenue-reports-trend-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 0 0 12px;
+}
+
+.mds-revenue-reports-trend-summary span {
+    display: grid;
+    gap: 3px;
+    padding: 10px 0;
+    border-top: 1px solid var(--mds-revenue-reports-line);
+    color: var(--mds-revenue-reports-muted);
+}
+
+.mds-revenue-reports-trend-summary strong {
+    color: var(--mds-revenue-reports-ink);
+    font-size: 15px;
+}
+
+.mds-revenue-reports-chart {
+    position: relative;
+    min-height: 260px;
+    padding: 18px 12px 12px;
+    border: 1px solid var(--mds-revenue-reports-line);
+    border-radius: 8px;
+    background: var(--mds-revenue-reports-soft);
+    overflow: hidden;
+}
+
+.mds-revenue-reports-chart svg {
+    position: absolute;
+    inset: 16px 12px 44px;
+    width: calc(100% - 24px);
+    height: calc(100% - 60px);
+}
+
+.mds-revenue-reports-chart polyline {
+    fill: none;
+    stroke: var(--mds-revenue-reports-accent);
+    stroke-width: 2.8;
+    vector-effect: non-scaling-stroke;
+}
+
+.mds-revenue-reports-chart-grid {
+    fill: none;
+    stroke: var(--mds-revenue-reports-accent-line);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+}
+
+.mds-revenue-reports-chart-bars {
+    position: absolute;
+    inset: 18px 16px 44px;
+    display: flex;
+    align-items: end;
+    gap: 3px;
+}
+
+.mds-revenue-reports-chart-bars span {
+    flex: 1 1 0;
+    min-width: 3px;
+    border-radius: 4px 4px 0 0;
+    background: var(--mds-revenue-reports-accent-soft);
+}
+
+.mds-revenue-reports-chart-points {
+    position: absolute;
+    inset: 16px 12px 44px;
+    pointer-events: none;
+}
+
+.mds-revenue-reports-chart-points span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--mds-revenue-reports-surface);
+    border-radius: 999px;
+    background: var(--mds-revenue-reports-accent-dark);
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, .2);
+    pointer-events: auto;
+}
+
+.mds-revenue-reports-chart-points span:focus {
+    outline: 2px solid var(--mds-revenue-reports-accent);
+    outline-offset: 2px;
+}
+
+.mds-revenue-reports-trend-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mds-revenue-reports-trend-list li {
+    display: grid;
+    gap: 3px;
+    padding: 10px 0;
+    border-top: 1px solid var(--mds-revenue-reports-line);
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-trend-list span,
+.mds-revenue-reports-trend-list strong {
+    overflow-wrap: anywhere;
+}
+
+.mds-revenue-reports-bars {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mds-revenue-reports-bars li {
+    display: grid;
+    gap: 7px;
+}
+
+.mds-revenue-reports-bars li > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.mds-revenue-reports-bars span,
+.mds-revenue-reports-bars strong {
+    overflow-wrap: anywhere;
+}
+
+.mds-revenue-reports-bar {
+    display: block;
+    height: 9px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    overflow: hidden;
+}
+
+.mds-revenue-reports-bar span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--mds-revenue-reports-accent);
+}
+
+.mds-revenue-reports-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mds-revenue-reports-table th,
+.mds-revenue-reports-table td {
+    border-color: var(--mds-revenue-reports-line);
+    color: var(--mds-revenue-reports-ink);
+    vertical-align: top;
+}
+
+.mds-revenue-reports-table.widefat,
+.mds-revenue-reports-table.widefat thead,
+.mds-revenue-reports-table.widefat tfoot {
+    background: var(--mds-revenue-reports-surface);
+    border-color: var(--mds-revenue-reports-line);
+    color: var(--mds-revenue-reports-ink);
+}
+
+.mds-revenue-reports-table.widefat.striped > tbody > :nth-child(odd) {
+    background: var(--mds-revenue-reports-soft);
+}
+
+.mds-revenue-reports-table a {
+    color: var(--mds-revenue-reports-accent-dark);
+}
+
+.mds-revenue-reports-empty-line {
+    margin: 0;
+    color: var(--mds-revenue-reports-muted);
+}
+
+.mds-revenue-reports-currency-note {
+    margin: 0 0 16px;
+}
+
+.mds-revenue-reports-currency-note ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mds-revenue-reports-currency-note li {
+    padding: 7px 10px;
+    border: 1px solid var(--mds-revenue-reports-accent-line);
+    border-radius: 999px;
+    background: var(--mds-revenue-reports-accent-soft);
+    color: var(--mds-revenue-reports-accent-dark);
+    font-weight: 700;
+}
+
+@media (max-width: 960px) {
+    .mds-revenue-reports-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .mds-revenue-reports-guidance {
+        grid-template-columns: 1fr;
+    }
+
+    .mds-revenue-reports-panel-wide {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 782px) {
+    .mds-revenue-reports-hero,
+    .mds-revenue-reports-panel-heading {
+        display: grid;
+    }
+
+    .mds-revenue-reports-hero {
+        margin-bottom: 18px;
+    }
+
+    .mds-revenue-reports-hero .button,
+    .mds-revenue-reports-panel-heading .button,
+    .mds-revenue-reports-filter-actions .button {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "package": "mds-revenue-reports",
+  "type": "extension",
+  "version": "0.1.2",
+  "channel": "main",
+  "title": "Revenue Reports",
+  "docs": [
+    {
+      "id": "usage",
+      "title": "Usage",
+      "file": "USAGE.md",
+      "audience": ["admin", "support"],
+      "topics": ["analytics", "exports", "orders", "payments", "stats"]
+    }
+  ]
+}
