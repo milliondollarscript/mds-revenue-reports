@@ -3,7 +3,7 @@
  * Plugin Name: Million Dollar Script - Revenue Reports
  * Plugin URI: https://milliondollarscript.com/extensions/revenue-reports
  * Description: Track Million Dollar Script revenue, order status, grid performance, and exportable income reports.
- * Version: 0.1.3
+ * Version: 0.1.4
  * Author: Million Dollar Script
  * Author URI: https://milliondollarscript.com
  * Text Domain: mds-revenue-reports
@@ -37,7 +37,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MDS_REVENUE_REPORTS_VERSION')) {
-    define('MDS_REVENUE_REPORTS_VERSION', '0.1.3');
+    define('MDS_REVENUE_REPORTS_VERSION', '0.1.4');
 }
 
 if (!defined('MDS_REVENUE_REPORTS_FILE')) {
