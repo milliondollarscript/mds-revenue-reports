@@ -37,7 +37,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MDS_REVENUE_REPORTS_VERSION')) {
-    define('MDS_REVENUE_REPORTS_VERSION', '0.1.2');
+    define('MDS_REVENUE_REPORTS_VERSION', '0.1.3');
 }
 
 if (!defined('MDS_REVENUE_REPORTS_FILE')) {
