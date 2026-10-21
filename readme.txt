@@ -4,7 +4,7 @@ Tags: million dollar script, revenue, reports, csv, analytics
 Requires at least: 6.0
 Tested up to: 7.1.3
 Requires PHP: 8.1
-Stable tag: 0.1.2
+Stable tag: 0.1.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -23,6 +23,9 @@ The extension reads Million Dollar Script orders instead of querying WooCommerce
 3. Open Million Dollar Script -> Revenue Reports.
 
 == Changelog ==
+
+= 0.1.3 =
+* Tested with WordPress 7.1.3 and WooCommerce 11.2.1, and the plugin states the exact versions it was tested with, so WordPress and WooCommerce no longer report it as untested on a current site.
 
 = 0.1.2 =
 * Streams every matching export row in bounded batches and protects spreadsheet cells from formula injection.
